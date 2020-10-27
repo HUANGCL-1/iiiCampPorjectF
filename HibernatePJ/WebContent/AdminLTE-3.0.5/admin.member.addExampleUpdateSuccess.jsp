@@ -60,7 +60,7 @@
               
               <div class="col-12">
           </form>
-          <input type="button" value="確認" class="btn btn-success float-right" onclick="location.href='http://localhost:8080/WebProject/ActionSelectAllMember.do'">
+          <input type="button" value="確認" class="btn btn-success float-right" onclick="location.href='http://localhost:8080/HibernatePJ/ActionSelectAllMember.do'">
         </div>
             </div>
             <!-- /.card-body -->

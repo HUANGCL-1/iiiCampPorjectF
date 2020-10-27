@@ -59,7 +59,7 @@ public class ActionInsert extends HttpServlet {
 			
 			mDAO.insert(newMember);
 
-			request.getRequestDispatcher("/AdminLTE-3.0.5/addExampleAddSuccess.jsp").forward(request, response);
+			request.getRequestDispatcher("/AdminLTE-3.0.5/admin.member.addExampleAddSuccess.jsp").forward(request, response);
 		
 		} catch (Exception e) {
 			session.getTransaction().rollback();

@@ -73,7 +73,7 @@ public class ActionUpdate extends HttpServlet {
 		Member newMember = new Member(account,password,name,gender,birthday,mobile,address,email,membertype);
 		mDAO.update(id,newMember);
 		
-		request.getRequestDispatcher("/AdminLTE-3.0.5/addExampleUpdateSuccess.jsp").forward(request, response);
+		request.getRequestDispatcher("/AdminLTE-3.0.5/admin.member.addExampleUpdateSuccess.jsp").forward(request, response);
 	}
 
 	private void gotoModify(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -88,9 +88,9 @@ public class ActionUpdate extends HttpServlet {
 		
 		int id = Integer.parseInt(request.getParameter("id"));
 		MemberDAO mDAO=new MemberDAO(session);
-		List<Member> list = mDAO.select(id);//選
-		request.setAttribute("list", list);//包
-		RequestDispatcher rd = request.getRequestDispatcher("/AdminLTE-3.0.5/addExample2.jsp");//送
+		List<Member> list = mDAO.select(id);//�
+		request.setAttribute("list", list);//���
+		RequestDispatcher rd = request.getRequestDispatcher("/AdminLTE-3.0.5/admin.member.addExample2.jsp");//��
 		rd.forward(request, response);
 		
 		

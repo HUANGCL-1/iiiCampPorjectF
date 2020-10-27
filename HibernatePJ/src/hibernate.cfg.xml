@@ -41,6 +41,8 @@
 		<mapping class="tw.huway0310.model.StockTransaction" />
 
 		<mapping class="tw.huway0310.model.Profiles" />
+		
+		<mapping class="com.gocamp.member.model.Member"/>
 
 
 	</session-factory>
