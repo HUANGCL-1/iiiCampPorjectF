@@ -56,7 +56,7 @@
             <form method="post" action="<c:url value='/ActionInsert.do' />">
       
             <div class="card-body">
-             <h1>註冊成功</h1>
+             <h1>註冊 成功</h1>
               
               <div class="col-12">
           </form>
